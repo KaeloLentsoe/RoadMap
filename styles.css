@@ -133,7 +133,7 @@ aside {
     color: #D5006E;  /* Pink color */
     white-space: nowrap;
     position: absolute;
-    top: 240%; /* Vertically centered */
+    top: 230%; /* Vertically centered */
     left: 81%;
     transform: translateX(-50%) translateY(-50%); /* Center both horizontally and vertically */
     animation: typing 4s steps(30) 1s 1 normal both, blinkCaret 0.75s step-end infinite;
