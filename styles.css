@@ -5,7 +5,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ecece4;
+    background-color: #fff;
 }
 
 header {
@@ -53,7 +53,7 @@ main {
 }
 
 main img {
-    width: 110%;
+    width: 100%;
     height: auto;
 }
 
@@ -112,4 +112,55 @@ aside {
 
 .checklist input[type="checkbox"] {
     cursor: pointer;
+}
+
+/* Animated Image Section */
+.animated-illustration {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.animate-image {
+    width: 300px;
+    height: auto;
+    animation: bounce 2s infinite;
+}
+
+/* Animated Text with Typing Effect */
+.animate-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #D5006E;  /* Pink color */
+    white-space: nowrap;
+    position: absolute;
+    top: 267%; /* Vertically centered */
+    left: 82%;
+    transform: translateX(-50%) translateY(-50%); /* Center both horizontally and vertically */
+    animation: typing 4s steps(30) 1s 1 normal both, blinkCaret 0.75s step-end infinite;
+}
+
+/* Typing effect keyframes */
+@keyframes typing {
+    from {
+        width: 0; /* Start with no text visible */
+    }
+    to {
+        width: 100%; /* Expand to the full width of the text */
+    }
+}
+
+/* Blinking Cursor effect */
+@keyframes blinkCaret {
+    50% {
+        border-color: transparent; /* Make the caret blink */
+    }
+}
+
+/* Add a caret (cursor) at the end of the text */
+.animate-text::after {
+    content: '!!';
+    display: inline-block;
+    margin-left: 5px;
+    border-right: 2px solid #D5006E;  /* Match the pink color */
+    animation: blinkCaret 0.75s step-end infinite; /* Apply blinking animation */
 }
