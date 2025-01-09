@@ -1,0 +1,125 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #f9fd00f6;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+h2 {
+    margin-top: 2rem;
+    color: #555;
+    font-size: 1.8rem;
+}
+
+h3 {
+    margin-top: 1.5rem;
+    color: #777;
+    font-size: 1.5rem;
+}
+
+/* Links Styling */
+a {
+    color: #f9fd00f6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Lists */
+ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+    list-style-type: square;
+}
+
+/* Checklist Styling */
+.checklist {
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.checklist label {
+    display: block;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #333;
+}
+
+.checklist input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+/* Section Styling */
+.section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.section:nth-child(odd) {
+    background: #f4f4f4;
+}
+
+/* Buttons (Optional for interactivity) */
+button {
+    background-color: #ff758c;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff5e73;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #888;
+}
